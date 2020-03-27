@@ -15,3 +15,8 @@ spec:
             containers:
                 - name: worker
                   image: sherifmeimari/multi-worker
+                  env: 
+                    - name: REDIS_HOST
+                      value: redis_cluster_ip_service
+                    - name: REDIS_PORT
+                      value: '6379'
